@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Gift Grove</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Gift Grove</h1>
+    <nav>
+      <a href="#spring">Spring</a>
+      <a href="#fall">Fall</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Celebrate Every Season</h2>
+    <p>Curated bundles, cozy crafts, and festive gifts all year round.</p>
+    <button onclick="filterProducts('spring')">Browse Spring Picks</button>
+  </section>
+
+  <div id="filters">
+    <button onclick="filterProducts('spring')">Spring</button>
+    <button onclick="filterProducts('fall')">Fall</button>
+  </div>
+
+  <section id="featured-products" class="product-grid">
+    <div class="product-card spring">
+      <img src="spring-candle.jpg" alt="Lavender Spring Candle">
+      <h4>Lavender Spring Candle</h4>
+      <p>$12.99</p>
+      <button onclick="addToCart('Lavender Spring Candle', 12.99)">Add to Cart</button>
+    </div>
+
+    <div class="product-card fall">
+      <img src="fall-mug.jpg" alt="Pumpkin Spice Mug">
+      <h4>Pumpkin Spice Mug</h4>
+      <p>$14.99</p>
+      <button onclick="addToCart('Pumpkin Spice Mug', 14.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
