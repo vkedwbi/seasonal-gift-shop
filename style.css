@@ -71,3 +71,13 @@ button {
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+.diwali-banner {
+  background-color: #f6e2b3;
+  color: #6c4b3c;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
